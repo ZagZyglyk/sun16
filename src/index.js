@@ -1,17 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const dataElements = [
+  {
+    assigne: 'Иванов',
+    status: 'в работе',
+    title: 'купить хлеб'
+  },
+  {
+    assigne: 'Петров',
+    status: 'готово',
+    title: 'купить горошек'
+  },
+  {
+    assigne: 'Сидоров',
+    status: 'новый',
+    title: 'купить молоко'
+  },
+  {
+    assigne: 'Сидорович',
+    status: 'готово',
+    title: 'купить масло'
+  },
+  {
+    assigne: 'Кирилов',
+    status: 'новый',
+    title: 'купить соль'
+  },
+]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App dataElements={dataElements} />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
